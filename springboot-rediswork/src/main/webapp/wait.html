@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+	<script type="text/javascript">
+		var time=60;
+		window.onload=function(){
+			setInterval("changeTime()", 1000);
+		} 
+		function changeTime(){
+			time--;
+			document.getElementById("second").innerHTML=time;
+			if(time==0)
+			{
+				clearInterval(time);
+				location.href="http://localhost:8081/index.html";
+				
+			}
+		}
+	</script>
+<body>
+	请在60秒后再次获取<span style="color:red" id="second">60</span>
+</body>
+</html>
