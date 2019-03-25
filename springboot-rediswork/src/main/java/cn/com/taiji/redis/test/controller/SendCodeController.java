@@ -12,7 +12,7 @@ import redis.clients.jedis.Jedis;
 public class SendCodeController {
 
 	private int num=0;
-    //开始页面
+    //开始页面*****************************
 	@RequestMapping("/")
 	public String index() {
 		return "index.html";
